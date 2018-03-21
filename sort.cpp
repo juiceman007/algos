@@ -24,6 +24,7 @@ int linearSearch(auto data, auto key)
 }
 	
  void insertionSort (auto &D){
+	 int passes = 0;
 	 for (int i = 1; i < D.size(); i++){
 		 int j = i;
 		 string temp;
@@ -33,7 +34,11 @@ int linearSearch(auto data, auto key)
 			D[j-1] = temp;
 			j = j-1; 
 		 }
+		 passes ++;
 	 }
+	 for (int a = 2; passes = a; a = a + 2){
+	 cout << "Passes completed : " << passes << endl;
+ }
  }	
 
 
